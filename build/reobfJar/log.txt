@@ -134,6 +134,8 @@ Adding Libraries to Inheritance
 Reading Input: D:\MODProject\DisplayArmor\build\libs\displayarmor-1.20.1-Forge-1.0.0.jar
 Adding input to inheritance map
 Processing entries
+Conflicting propagated mapping for shake1227/displayarmor/DisclaimerScreen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V from net/minecraft/client/gui/screens/Screen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V: render -> m_88315_
+Conflicting propagated mapping for shake1227/displayarmor/DisclaimerScreen/init()V from net/minecraft/client/gui/screens/Screen/init()V: init -> m_7856_
 Conflicting propagated mapping for net/minecraft/world/entity/LivingEntity/lambda$addAdditionalSaveData$3(Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V from net/minecraft/world/entity/player/Player/lambda$addAdditionalSaveData$3(Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V: lambda$addAdditionalSaveData$3 -> m_219754_
 Adding extras
 Sorting
@@ -146,4 +148,6 @@ Writing Output: D:\MODProject\DisplayArmor\build\reobfJar\output.jar
   shake1227/
   shake1227/displayarmor/
   shake1227/displayarmor/ArmorOverlayRenderer.class
+  shake1227/displayarmor/ClientEventHandler.class
+  shake1227/displayarmor/DisclaimerScreen.class
   shake1227/displayarmor/Displayarmor.class

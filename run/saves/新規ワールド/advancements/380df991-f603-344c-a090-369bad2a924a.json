@@ -8,6 +8,7 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "minecraft:beach": "2025-12-29 22:44:37 +0900",
+      "minecraft:forest": "2026-01-26 18:27:49 +0900",
       "minecraft:old_growth_birch_forest": "2025-12-29 22:45:47 +0900"
     },
     "done": false
