@@ -11,6 +11,8 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.scores.Objective;
+import net.minecraft.world.scores.Scoreboard;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.client.event.RenderPlayerEvent;
@@ -39,6 +41,12 @@ public class ArmorOverlayRenderer {
         PoseStack poseStack = event.getPoseStack();
         poseStack.pushPose();
         double height = player.getBbHeight() + 0.6;
+        Scoreboard scoreboard = player.getScoreboard();
+        Objective belowNameObjective = scoreboard.getDisplayObjective(2);
+        if (belowNameObjective != null) {
+            height += 0.3;
+        }
+
         poseStack.translate(0, height, 0);
         Quaternionf cameraRotation = Minecraft.getInstance().getEntityRenderDispatcher().cameraOrientation();
         poseStack.mulPose(cameraRotation);
